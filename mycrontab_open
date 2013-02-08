@@ -1,0 +1,3 @@
+#min	hour	mday	month	wday	command
+*/1	*	*	*	*	/usr/bin/perl /tmp5/masterScript5.pl
+*/15	*	*	*	*	/usr/sbin/ntpdate ntp.ubuntu.com
