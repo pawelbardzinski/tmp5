@@ -7,7 +7,7 @@ if ($ARGV[0] eq '')	{
 
 my $touchfile = '/tmp5/touch.txt';
 my $datefile = '/tmp5/date.txt';
-my $timefile = '/blazeds/tomcat/webapps/alive5/Alive6_HiRes/time.txt';
+my $timefile = '/tmp5/time.txt';
 
 open (T, "<$timefile");
 my $time_ = <T>;
@@ -100,6 +100,7 @@ close (Z);
 system ('zip /tmp5/data2.zip /tmp5/data2.csv');
 system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/ROOT/data.zip');
 system ('cp /tmp5/latest_data2.csv /tmp5/latest_data.csv');
+system ('cp /tmp5/latest_data2.csv /blazeds/tomcat/webapps/alive5/Alive6_HiRes/latest_data.csv');
 
 open (F, ">$touchfile");
 close (F);    
@@ -108,4 +109,7 @@ system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/alive5/Alive5/data.zip');
 system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/alive5/Alive6_HiRes/data.zip');
 system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/alive5/Alive6_MedRes/data.zip');
 system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/alive5/Alive6_LowRes/data.zip');
-
+system ('cp /tmp5/time.txt /blazeds/tomcat/webapps/alive5/Alive5/time.txt');
+system ('cp /tmp5/time.txt /blazeds/tomcat/webapps/alive5/Alive6_HiRes/time.txt');
+system ('cp /tmp5/time.txt /blazeds/tomcat/webapps/alive5/Alive6_MedRes/time.txt');
+system ('cp /tmp5/time.txt /blazeds/tomcat/webapps/alive5/Alive6_LowRes/time.txt');
