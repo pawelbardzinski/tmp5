@@ -1,9 +1,9 @@
 #!/usr/bin/perl -w
-
-my $filename = "/tmp5/time.txt";
+use Time::HiRes qw(usleep);
+my $filename = "/blazeds/tomcat/webapps/alive5/Alive6_HiRes/time.txt";
 
 while (1)	{
-	sleep 1;
+	usleep (1000000);
 	my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
 	open (F,">$filename");
 	print F $min.':'.$sec;
