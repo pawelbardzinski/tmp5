@@ -107,9 +107,5 @@ close (F);
 
 system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/alive5/Alive5/data.zip');
 system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/alive5/Alive6_HiRes/data.zip');
-system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/alive5/Alive6_MedRes/data.zip');
-system ('cp /tmp5/data2.zip /blazeds/tomcat/webapps/alive5/Alive6_LowRes/data.zip');
-system ('cp /tmp5/time.txt /blazeds/tomcat/webapps/alive5/Alive5/time.txt');
+system ('cp /tmp5/data2.csv /blazeds/tomcat/webapps/alive5/Alive6_HiRes/data.csv');
 system ('cp /tmp5/time.txt /blazeds/tomcat/webapps/alive5/Alive6_HiRes/time.txt');
-system ('cp /tmp5/time.txt /blazeds/tomcat/webapps/alive5/Alive6_MedRes/time.txt');
-system ('cp /tmp5/time.txt /blazeds/tomcat/webapps/alive5/Alive6_LowRes/time.txt');
