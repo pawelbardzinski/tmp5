@@ -55,7 +55,7 @@ if ($wday == 0) { $Wday = 'Sun'; }
 
 my $today = $mday." ".$Month." ".($year+1900)." ".$Wday."\n";  
 my $weekend = 'weekday';  
-if ((($Wday eq 'Sat') || (($Wday eq 'Sun') && ($hour ne '18') && ($hour ne '19') && ($hour ne '20') && ($hour ne '21') && ($hour ne '22') && ($hour ne '23'))  || (($Wday eq 'Fri') && (($hour eq '18') || ($hour eq '19') || ($hour eq '20') || ($hour eq '21') || ($hour eq '22') || ($hour eq '23')))))		{
+if ((($Wday eq 'Sat') || (($Wday eq 'Sun') && ($hour ne '17') && ($hour ne '18') && ($hour ne '19') && ($hour ne '20') && ($hour ne '21') && ($hour ne '22') && ($hour ne '23'))  || (($Wday eq 'Fri') && (($hour eq '18') || ($hour eq '19') || ($hour eq '20') || ($hour eq '21') || ($hour eq '22') || ($hour eq '23')))))		{
 	$weekend = 'weekend';
 }
 

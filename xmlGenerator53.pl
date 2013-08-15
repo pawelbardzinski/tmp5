@@ -87,7 +87,7 @@ $content =~ m!"MYR">(.+)</Price>!; $MYR = sprintf("%.2f",$1*31.1034768);
 $content =~ m!"NZD">(.+)</Price>!; $NZD = sprintf("%.2f",$1*31.1034768);
 $content =~ m!"PEN">(.+)</Price>!; $PEN = sprintf("%.2f",$1*31.1034768);
 $content =~ m!"PHP">(.+)</Price>!; $PHP = sprintf("%.1f",$1*31.1034768);
-$content =~ m!"RUR">(.+)</Price>!; $RUR = sprintf("%.1f",$1*31.1034768);
+$content =~ m!"RUB">(.+)</Price>!; $RUR = sprintf("%.1f",$1*31.1034768);
 $content =~ m!"SEK">(.+)</Price>!; $SEK = sprintf("%.2f",$1*31.1034768);
 $content =~ m!"SGD">(.+)</Price>!; $SGD = sprintf("%.2f",$1*31.1034768);
 $content =~ m!"TRY">(.+)</Price>!; $TRY = sprintf("%.2f",$1*31.1034768);

@@ -2,7 +2,7 @@
 */1	*	*	*	1-4	/usr/bin/perl /tmp5/masterScript5.pl
 */1	17-23	*	*	7	/usr/bin/perl /tmp5/masterScript5.pl
 */1	0-17	*	*	5	/usr/bin/perl /tmp5/masterScript5.pl
-0	18	*       *       5       /usr/bin/perl /tmp5/masterScript5.pl
+*/1     18	*       *       5       /usr/bin/perl /tmp5/masterScript5.pl
 */15	*	*	*	*	/usr/sbin/ntpdate ntp.ubuntu.com
 */1	*	*	*	*	/usr/bin/ruby /tmp5/checkBackgroundProcesses.rb
-
+0	8	*	*	*	/usr/bin/ruby /blazeds/tomcat/webapps/alive5/Alive6_HiRes/updateHistory.rb
