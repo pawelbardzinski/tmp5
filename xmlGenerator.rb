@@ -44,7 +44,7 @@ if time == '00:00'
   @currencies.each do |currency|
     @time.each do |t|
       arr = @stuff[currency][t].split(',')
-      @stuff[currency][t] = '"",'+'#{arr[1].to_s},'+'{arr[2].to_s}'
+      @stuff[currency][t] = '"",'+"#{arr[0].to_s},"+"#{arr[1].to_s}"
     end
   end
 end
@@ -64,7 +64,9 @@ file =~ /\"USD\"\>(.+?)\<\/Price\>/
 
 @currencies.each do |currency|
   arr = @stuff[currency][time].to_s.split(',')
+  currency = 'RUB' if currency == 'RUR'
   file =~ /\"#{currency}\"\>(.+?)\<\/Price\>/
+  currency = 'RUR' if currency == 'RUB'
   @gld_price = ($1.to_f*31.1034768).round(2).to_s
   if currency == 'gldslv' 
     @stuff[currency][time] = (@gld_price_usd.to_f/@slv_price.to_f).round(2).to_s+','+arr[1].to_s+','+arr[2].to_s
